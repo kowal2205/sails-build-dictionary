@@ -109,6 +109,8 @@ function buildDictionary (options, cb) {
 				}
 				else module.identity = filename;
 			}
+			//kowal2205 addded in order to use modular application
+			module.identity = module.identity.replace("/","_");
 
 			// globalId is the name of the variable for this module 
 			// that will be exposed globally in Sails unless configured otherwise
